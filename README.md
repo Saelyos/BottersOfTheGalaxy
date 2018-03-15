@@ -20,11 +20,11 @@ On Wednesday I start writing my first real AI. At first, I went for the “hero 
 -	The AI I had was already good even if there were a lot of things that could be improved
 -	I was lazy to do another thing more complex :)  
 
-So, I went for an Hulk + Deadpool composition and tried to improve it as much as I could. Because I often take damages from the units and the tower, my main goal was always to end the game as soon as possible.
+So, I went for an Hulk + Deadpool composition (these 2 melees have the best controls and very good stats overall) and tried to improve it as much as I could. Because I often take damages from the units and the tower, my main goal was always to end the game as soon as possible.
 
 ## Opponent composition
 I need to know the hero I’ll focus first and since some of them are more defensive or have more mobility than others, I had the following focus order: Doctor Strange > Valkyrie > Hulk > Deadpool > Ironman   
-You will see later that I make distinctions if I’m against a melee composition or a ranged composition but that’s the only difference I do. I didn’t need to target specific opponents.
+You will see later that I make distinctions if I’m against a melee composition or a ranged composition (I consider a mixed composition to be ranged at the beginning and melee as soon as I kill the ranged hero) but that’s the only difference I do. I didn’t need to target specific opponents.
 
 ## Finite State Machine
 My global strategy can be seen as a very simple FSM with 3 states:  
@@ -38,7 +38,7 @@ Don’t underestimate units! Coming to the opponent tower with 4 units brings me
 The way I deal damage to the first 4 creeps is hard-coded to be sure that I last hit all of them and earn 140 golds if the enemy is not coming to me.
 
 #### Engaging
-Very basic: Hulk shields and Deadpool moves towards.  
+Very basic: Hulk shields and Deadpool moves forward.  
 I don’t have an engaging state against ranged comp because the turn I lose shielding, the enemy is usually too far to engage.
 
 #### Killing
@@ -64,7 +64,7 @@ I had this idea when I was trying to improve the way I dived, but it turned out 
 
 
 ## Conclusion
-Honestly, when I woke up on Monday morning I was far from expecting to win, I was only focused on getting the best of the strategy I had chosen and the result exceed all my expectations!
+Honestly, when I woke up on Monday morning I was far from expecting to win, I was only focused on getting the best of the strategy I had chosen and the result exceeds all my expectations!
 
 Naturally, I have players against which I’m more vulnerable, I think BrunoFelthes was the one I was struggling the most against, with a very good counter-dive strategy.
 
